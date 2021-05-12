@@ -17,9 +17,9 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 @RepositoryRestResource
 public interface ProductRepository extends JpaRepository<Product, Long> {
 
-    List<Product> findByCategoryId(@RequestParam("id") Long id);
+    //List<Product> findByCategoryId(@RequestParam("id") Long id);
 
-    //Page<Product> findByCategoryId(@RequestParam("id") Long id, Pageable pageable);
+    Page<Product> findByCategoryId(@RequestParam("id") Long id, Pageable pageable);
 
     //Page<Product> findByNameContaining(@RequestParam("name") String name, Pageable pageable);
 
