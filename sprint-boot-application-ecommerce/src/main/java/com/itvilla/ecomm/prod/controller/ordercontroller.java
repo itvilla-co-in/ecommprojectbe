@@ -3,13 +3,11 @@ package com.itvilla.ecomm.prod.controller;
 import com.itvilla.ecomm.prod.dto.myorder;
 import com.itvilla.ecomm.prod.dto.orderresponse;
 import com.itvilla.ecomm.prod.service.purchaseservice;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/order")
+@CrossOrigin(origins = "*")
 public class ordercontroller {
 
     private purchaseservice purchaseservice;
